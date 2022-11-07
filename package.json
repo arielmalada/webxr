@@ -2,6 +2,7 @@
   "name": "webxr",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://arielmalada.github.io/webxr",
   "dependencies": {
     "@react-three/drei": "^9.40.0",
     "@react-three/fiber": "^8.9.1",
@@ -16,6 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/scene.gltf')
+  const { nodes, materials } = useGLTF('./scene.gltf')
   return (
     <group {...props} dispose={null}>
       <group position={[-6.83, 2.74, 0.5]} rotation={[1.42, 0.03, 1.57]} scale={0.01}>
@@ -192,4 +192,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('./scene.gltf')
