@@ -48,13 +48,13 @@ export default function App() {
         <div className="absolute"><ARButton onClick={toggleBackground} /></div>
       </div>
       <Canvas>
-        <XR referenceSpace="local">
+        <XR referenceSpace="unbounded">
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
           {/* <Button position={[0, 0.1, -0.2]} /> */}
           <Suspense fallback={null}>
         
-            <Scene position={[0, -2, -3]} />
+            <Scene position={[0, -2, -1]} />
           </Suspense>
           <Controllers />
         </XR>
